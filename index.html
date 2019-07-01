@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Actividad7</title>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            grid-template-rows: repeat(2, 13em);
+            width: 40%;
+            margin: 0;
+            margin: auto;
+            color: white;
+            font-family: sans-serif;
+        }
+
+        .primero {
+            width: 100%;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            background: teal;
+            box-sizing: border-box;
+            border: 3px solid black;
+        }
+        .primero ul{
+            padding-left: 1.5em;
+        }
+        .primero a{
+            text-decoration: none;
+            font-weight: lighter;
+            color: white;
+        }
+
+        .segundo{
+            width: 100%;
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+            box-sizing: border-box;
+            padding: 2em;
+            border: 3px solid black;
+            background: orange;
+        }
+        .segundo #mover{
+            box-sizing: border-box;
+            padding-right: 1em;
+        }
+        .segundo #grande{
+            font-size: 3em;
+        }
+
+        .tercero{
+            width: 100%;
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+            background: tomato;
+            box-sizing: border-box;
+            border: 3px solid black;
+        }
+        .tercero ol {
+            padding-left: 1.5em;
+        }
+        h3{
+            padding-left: 1em;
+            padding-top: 1em;
+            font-weight: lighter;
+            margin: 0;
+        }
+
+        .cuarto{
+            width: 100%;
+            background: #f2f2f2;
+            box-sizing: border-box;
+            border: 3px solid black;
+        }
+        .cuarto p{
+            margin: 0;
+            font-weight: bold;
+            padding-right: 1em;
+            font-size: 2em;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="primero">
+        <h3>Features</h3>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </div>
+    <div class="segundo" dir="rtl">
+        <span id="mover">Important Interview</span><br>
+        <span>3:00 - 4:00</span><br>
+        <span>December </span>
+        <span id="grande">15</span>
+    </div>
+    <div class="tercero">
+        <h3>TODO</h3>
+        <ol>
+            <li>Build websites</li>
+            <li>Buildd apps</li>
+            <li>Build games</li>
+        </ol>
+    </div>
+    <div class="cuarto">
+        <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.uv.es%2Fwebgid%2FDescriptiva%2FImagen13.jpg&f=1" alt="diagrama"><br>
+        <p dir="rtl">4800</p>
+    </div>
+</body>
+</html>
